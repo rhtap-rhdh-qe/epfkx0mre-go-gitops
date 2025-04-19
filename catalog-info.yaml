@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: epfkx0mre-go-gitops
+  description: This is GitOps manifest for epfkx0mre-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=epfkx0mre-go
+    backstage.io/kubernetes-id: epfkx0mre-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: epfkx0mre-go
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:epfkx0mre-go

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: epfkx0mre-go-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/epfkx0mre-go-gitops
